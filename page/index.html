@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="/style.css" />
+<script src="/script.js" defer></script>
+
+<h1>Hello, <span data-bind:text="your-name">you</span>!</h1>
+
+<form method="post">
+    <label>
+        <span>Your name, please</span>
+        <input name="your-name" required />
+    </label>
+    <button name="do" value="greet">Greet!</button>
+    <button type="button" id="directions">Tell me how to get there</button>
+    <button type="button" id="geofence">Tell me when I get there</button>
+    <button type="button" id="geolocation">Tell me my location</button>
+</form>
