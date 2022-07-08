@@ -42,3 +42,20 @@ document.getElementById("geolocation").addEventListener("click", function() {
 	}
 	parent.postMessage(data, "*"); //TODO: Change this to origin of corodova window. Probably is `https://localhost`.
 });
+
+document.getElementById("timed_notification").addEventListener("click", function() {
+	var data = {
+		"type": "notification",
+		"subtype": "timed",
+		"payload" : {
+			"title": "Hello, there!",
+			"subtitle": "You wanted us to tell you in 5 seconds, so we told you!",
+			"year": "2022",
+			"month": "6",
+			"day": "8",
+			"hour": "14",
+			"minute": "50"
+		}
+	}
+	parent.postMessage(data, "*");
+});
